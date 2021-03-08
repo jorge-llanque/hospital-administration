@@ -1,0 +1,62 @@
+<form [formGroup]="form" (ngSubmit)="saveVisitNote($event)">
+
+  <mat-card >
+
+    <mat-card-header>
+      <mat-card-title>Edit Visit Note</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <div class="column">
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="id" formControlName="id" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="Patient" formControlName="patient" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="Doctor" formControlName="doctor" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field color="accent" appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <textarea placeholder="Text" formControlName="details" matInput></textarea>
+          </mat-form-field>
+        </div>
+
+      </div>
+      <div class="column-two">
+        <div class="row">
+          <div class="col-xs">
+            <img  class="image-field" src="./../../../../assets/images/visit.png">
+            <input type="file"  disabled>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button color="accent" [disabled]="form.invalid" mat-raised-button type="submit">Save</button>
+      <button mat-raised-button (click)="goBack()" >Cancel</button>
+    </mat-card-actions>
+
+  </mat-card>
+</form>

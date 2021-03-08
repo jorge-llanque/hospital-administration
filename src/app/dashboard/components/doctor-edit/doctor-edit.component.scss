@@ -1,0 +1,51 @@
+form {
+  width: 50rem;
+  height: 50%;
+  margin-top: 70px;
+  align-items: center;
+  padding: 50px 50px;
+  margin: auto;
+}
+
+mat-card {
+  height: 100%;
+}
+
+mat-card-header {
+  height: 15%;
+  padding-left: 57px;
+}
+
+mat-card-content {
+  height: 70%;
+}
+
+mat-card-actions {
+
+  padding-left: 80px;
+}
+
+mat-card-list{
+  height: 100%;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-field {
+  justify-content: center;
+  width: 200px;
+  height: 220px;
+  border-style: dotted;
+  border-width: 2px;
+  margin: 10px 0 10px 0;
+}
+
+.column-two .row .col-xs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

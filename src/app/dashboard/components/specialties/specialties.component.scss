@@ -1,0 +1,58 @@
+.form {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+h1 {
+  text-decoration-line: underline;
+  padding-bottom: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-row:nth-child(odd){
+  background-color: #f0f0f0;
+}
+
+table th {
+  background-color: #ffdada;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 50%;
+  margin-left: 50px;
+}
+
+.mat-column-number {
+  width: 7%;
+}
+
+.mat-column-title,
+.mat-column-image {
+  width: 10%;
+}
+
+.mat-column-description {
+  width: 43%;
+}
+.mat-column-info,
+.mat-column-update,
+.mat-column-remove {
+  width: 10%;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 65px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10%;
+}

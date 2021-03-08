@@ -1,0 +1,58 @@
+<form [formGroup]="form" (ngSubmit)="savePatient($event)">
+
+  <mat-card >
+
+    <mat-card-header>
+      <mat-card-title>Edit patient</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <div class="column">
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="id" formControlName="id" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="name" formControlName="name" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="lastname" formControlName="lastname" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="dateOfBirth" formControlName="dateOfBirth" matInput type="text">
+          </mat-form-field>
+        </div>
+
+        <div class="col-xs">
+          <mat-form-field>
+            <input placeholder="address" formControlName="address" matInput type="text">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="column-two">
+        <div class="row">
+          <div class="col-xs">
+            <img  class="image-field" src="./../../../../assets/images/perfil-default.jpg">
+            <input type="file" disabled>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button color="accent" [disabled]="form.invalid" mat-raised-button type="submit">Save</button>
+      <button mat-raised-button (click)="goBack()" >Cancel</button>
+    </mat-card-actions>
+
+  </mat-card>
+</form>

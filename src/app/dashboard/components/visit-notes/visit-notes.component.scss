@@ -1,0 +1,50 @@
+.form {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+h1 {
+  text-decoration-line: underline;
+  padding-bottom: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-row:nth-child(odd){
+  background-color: #f0f0f0;
+}
+
+table th {
+  background-color: #ffdada;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 50%;
+  margin-left: 50px;
+}
+
+.mat-column-number {
+  width: 5%;
+}
+
+.mat-column-date,
+.mat-column-patient,
+.mat-column-doctor {
+  width: 10%;
+}
+
+.mat-column-details {
+  width: 45%;
+}
+
+.mat-column-update,
+.mat-column-remove {
+  width: 10%;
+}
+

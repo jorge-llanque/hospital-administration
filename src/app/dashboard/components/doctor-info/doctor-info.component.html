@@ -1,0 +1,83 @@
+<form>
+
+  <mat-card class="card">
+
+    <mat-card-header>
+      <mat-card-title>Doctor Information</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <div class="perfil">
+
+        <div class="photo">
+          <img src="{{doctor.image}}" alt="doctor-image">
+        </div>
+
+        <div class="info-complete">
+          <div class="info name">
+            <h3>Name: {{doctor.name}}</h3>
+          </div>
+          <div class="info lastname">
+            <h3>Lastname: {{doctor.lastname}}</h3>
+          </div>
+          <div class="info date">
+            <h3>Date of Birthday: {{doctor.dateOfBirth}}</h3>
+          </div>
+          <div class="info address">
+            <h3>Address: {{doctor.address}}</h3>
+          </div>
+          <div class="info specialties">
+            <h3>Specialties: {{doctor.specialties}}</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-notes">
+        <h2>Visit Notes</h2>
+        <mat-form-field>
+          <mat-label>Filter by title</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Title..." #input>
+        </mat-form-field>
+
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="myPatients" matSort>
+
+            <ng-container matColumnDef="number">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> # </th>
+              <td mat-cell *matCellDef="let row; let i = index"> {{i + 1}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="date">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
+              <td mat-cell *matCellDef="let row"> {{row.date | date}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="patient">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Patient </th>
+              <td mat-cell *matCellDef="let row"> {{row.patient}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="details">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
+              <td mat-cell *matCellDef="let row"> {{row.details}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <tr class="mat-row" *matNoDataRow>
+              <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+            </tr>
+          </table>
+
+          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+        </div>
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</form>

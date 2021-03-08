@@ -1,0 +1,64 @@
+:host
+
+
+.form {
+  width: 50rem;
+  margin-top: 70px;
+  align-items: center;
+  padding: 50px 50px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration-line: underline;
+  padding-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-row:nth-child(odd){
+  background-color: #f0f0f0;
+}
+
+table th {
+  background-color: #ffdada;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 60%;
+}
+
+.example-form-field {
+  margin: 0 8px 0 0;
+}
+
+.mat-elevation-z8 {
+  width: 100%;
+}
+
+.mat-column-number {
+  width: 10%;
+}
+
+.mat-column-name {
+  width: 60%;
+}
+
+.mat-column-date_created,
+.mat-column-options {
+width: 15%;
+}
+
+.button:hover {
+  background-color: #FF4081;
+}
+
