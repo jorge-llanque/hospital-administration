@@ -14,7 +14,7 @@ export class DoctorFormComponent implements OnInit {
 
   form: FormGroup;
   image$: Observable<any>;
-  default: "./../../../../assets/images/perfil-default.jpg";
+  default: "assets/images/perfil-default.jpg";
 
   constructor(
     private formBuilder: FormBuilder,

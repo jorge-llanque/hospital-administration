@@ -8,7 +8,7 @@ export const DOCTORS: Doctor[] = [
     dateOfBirth: '14th February 1990',
     address: 'Lincon Avenue',
     specialties: ['Dermatology'],
-    image: './../../../../assets/images/doctor-1.jpg'
+    image: 'assets/images/doctor-1.jpg'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const DOCTORS: Doctor[] = [
     dateOfBirth: '9th Agost 1977',
     address: 'Mars Avenue',
     specialties: ['Neurology', 'Urology'],
-    image: './../../../../assets/images/doctor-2.jpg'
+    image: 'assets/images/doctor-2.jpg'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const DOCTORS: Doctor[] = [
     dateOfBirth: '2nd June 1988',
     address: 'Military Avenue',
     specialties: ['Ophthalmology', 'Psychiatry', 'Pathology'],
-    image: './../../../../assets/images/doctor-3.jpg'
+    image: 'assets/images/doctor-3.jpg'
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const DOCTORS: Doctor[] = [
     dateOfBirth: '14th February 1990',
     address: 'Lincon Avenue',
     specialties: ['Pathology'],
-    image: './../../../../assets/images/doctor-4.jpg'
+    image: 'assets/images/doctor-4.jpg'
   },
   {
     id: 5,
