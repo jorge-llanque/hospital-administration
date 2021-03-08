@@ -1,11 +1,11 @@
 # HOSPITAL ADMINISTRATION
-This Project is a sample how to implement Angular for a project. [Look at here](https://jorge-llanque.github.io/Calories_Counter/)
+This Project is a sample how to implement Angular for a project. [Look at here](https://jorge-llanque.github.io/hospital-administration/)
 
 ## Getting Started
 This app is a administration's system. You can manage doctors, patients, notes, specialties. The app simulate a memory storage in the browser.
 
 ## Deployment
- The app was upload on github-page, you can visit the app [here](https://jorge-llanque.github.io/Calories_Counter/)
+ The app was upload on github-page, you can visit the app [here](https://jorge-llanque.github.io/hospital-administration/)
 
 ## TECHNOLOGIES AND TOOLS
 The principal language for the development is Javascript but for more specification I'm using:
